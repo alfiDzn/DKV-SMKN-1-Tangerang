@@ -1,17 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
-
-@font-face {
-    font-family: "Roobert";
-    src: url("font/Roobert-Regular.woff") format("woff");
-}
-
-@font-face {
-    font-family: 'Helvetica';
-    src: url('font/Helvetica.ttf') format('truetype');
-}
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 body {
-    font-family: 'Metropolis';
+    font-family: 'Plus Jakarta Sans';
     left: 0;
     top: 0;
     background-color: #FFFAEC;
