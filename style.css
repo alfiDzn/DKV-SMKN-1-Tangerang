@@ -23,6 +23,11 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+.logoheader {
+    display: flex;
+    align-items: center;
+}
+
 header {
     display: flex;
     position: fixed;
