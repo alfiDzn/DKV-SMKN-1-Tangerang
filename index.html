@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda | DKV SMKN 1 Tangerang</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="https://www.dkv.smkn1.tangera.ng/sites/default/files/favicon.ico" type="image/vnd.microsoft.icon">
+    <meta name="google-signin-client_id" content="778471689400-bco1aapib1jqig9bs0r292p0mt7ka9ls.apps.googleusercontent.com">
+</head>
+<body>
+    
+    <header>
+        <h1>DKV SMKN 1 Tangerang</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#" id="dropdown-link">Sekolah <i class="fa-caret-down"></i></a>
+                    <div class="dropdown__menu">
+                        <ul>
+                            <li><a href="#" id="a1">Visi & Misi</a></li>
+                            <li><a href="#" id="a2">Capaian Kompetisi Fase E</a></li>
+                            <li><a href="#" id="a3">Capaian Kompetisi Fase F</a></li>
+                            <li><a href="#" id="a4">Guru</a></li>
+                            <li><a href="#" id="a5">Murid</a></li>
+                            <li><a href="#" id="a6">Alamat Sekolah</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#" id="dropdown-link1">Jadwal <i class="fa-caret-down"></i></a>
+                    <div class="dropdown__menu">
+                        <ul>
+                            <li><a href="#" id="a1">Kelas</a></li>
+                            <li><a href="#" id="a2">Guru</a></li>
+                            <li><a href="#" id="a3">Sekarang</a></li>
+                            <li><a href="#" id="a4">Beban Mengajar</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#" id="dropdown-link2">PKL <i class="fa-caret-down"></i></a>
+                    <div class="dropdown__menu">
+                        <ul>
+                            <li><a href="#" id="a1">Angkatan 1</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Moodle</a></li>
+            </ul>
+        </nav>
+        <form action="login.php" method="POST">
+        <div class="loginbtn">
+            
+            <div class="login-up">
+                <a>Login</a>
+                <img src="img/Artboard 1.svg" alt="signin" style="width: 20px; height: 20px;" class="login-svg">
+            </div>
+            <div class="login-float">
+                <h2>Login</h2>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" id="password" class="password" required>
+                <a href="#" class="forgot-pass">Forgot password?</a>
+                <!-- <p class="login-btn-float">Login</p> -->
+                <a href="users/index_users.html">
+                    <button type="submit" name="login" class="login-btn-float">Login</button>
+                </a>
+                <p class="no-account">Don't have an account? <a href="register.html">Signup</a></p>
+                <div class="or">
+                    <span class="garis"></span>
+                    <span class="teksor">Or</span>
+                    <span class="garis"></span>
+                </div>
+                <div class="g-signin2" data-onsuccess="onSignIn"></div>
+            </div>
+        </div>
+        </form>
+    </header>
+
+
+
+
+    
+    <section class="section1" id="section1">
+        <div class="hometitle">
+            <h2 class="subatas" id="animsec1">Selamat datang di website</h2>
+            <div class="char-container">
+                <div class="char" id="animsec2">DKV</div>
+                <div class="char" id="animsec3">SMKN 1</div>
+                <div class="char" id="animsec4">Tangerang</div>
+            </div>
+            <!-- <h1 class="char">
+                DKV
+                <br>SMKN 1<br>Tangerang</h1> -->
+            <p id="animsec5" >LMS Moodle untuk DKV</p>
+            <a href="https://www.lms.dkv.smkn1.tangera.ng" class="lmsmoodle" id="animsec6" target="_blank">Klik di sini!</a>
+        </div>
+
+        <div class="imghome">
+            <img src="img/homeee.png" alt="anjing" style="width: 650px; height: 650px;" id="imghome">
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="section2" id="section2">
+        <div class="titleterbaru">
+            <h1 class="titlesec2">Terbaru</h1>
+        </div>
+        <div class="card-container">
+            <div class="card" id="card1">
+                <img src="img/img2.jpg" alt="img2" class="imagecard">
+                <div class="card-content">
+                    <h3>Pembullyan DKV</h3>
+                    <h4>6 Februari 2025</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio aspernatur et, fuga itaque velit eaque illo facere quod placeat, nam libero sapiente iusto sit tempora! Error neque minima doloremque corrupti?</p>
+                    <a href="#" class="btn">Read -</a>
+                </div>
+            </div>
+            <div class="card" id="card2">
+                <img src="img/img3.jpg" alt="img3" class="imagecard">
+                <div class="card-content">
+                    <h3>Foto BTS</h3>
+                    <h4>6 Februari 2025</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio aspernatur et, fuga itaque velit eaque illo facere quod placeat, nam libero sapiente iusto sit tempora! Error neque minima doloremque corrupti?</p>
+                    <a href="#" class="btn">Read -</a>
+                </div>
+            </div>
+            <div class="card" id="card3">
+                <img src="img/img4.jpg" alt="img4" class="imagecard">
+                <div class="card-content">
+                    <h3>Foto BTS di Bintaro</h3>
+                    <h4>6 Februari 2025</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio aspernatur et, fuga itaque velit eaque illo facere quod placeat, nam libero sapiente iusto sit tempora! Error neque minima doloremque corrupti?</p>
+                    <a href="#" class="btn">Read -</a>
+                </div>
+            </div>
+            <div class="card" id="card4">
+                <img src="img/img2.jpg" alt="img2" class="imagecard">
+                <div class="card-content">
+                    <h3>Pembullyan DKV</h3>
+                    <h4>6 Februari 2025</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio aspernatur et, fuga itaque velit eaque illo facere quod placeat, nam libero sapiente iusto sit tempora! Error neque minima doloremque corrupti?</p>
+                    <a href="#" class="btn">Read -</a>
+                </div>
+            </div>
+            <div class="card" id="card5">
+                <img src="img/img3.jpg" alt="img3" class="imagecard">
+                <div class="card-content">
+                    <h3>Foto BTS</h3>
+                    <h4>6 Februari 2025</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio aspernatur et, fuga itaque velit eaque illo facere quod placeat, nam libero sapiente iusto sit tempora! Error neque minima doloremque corrupti?</p>
+                    <a href="#" class="btn">Read -</a>
+                </div>
+            </div>
+            <div class="card" id="card6">
+                <img src="img/img4.jpg" alt="img4" class="imagecard">
+                <div class="card-content">
+                    <h3>Foto BTS di Bintaro</h3>
+                    <h4>6 Februari 2025</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio aspernatur et, fuga itaque velit eaque illo facere quod placeat, nam libero sapiente iusto sit tempora! Error neque minima doloremque corrupti?</p>
+                    <a href="#" class="btn">Read -</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+
+<script src="lib/anime.min.js"></script>
+<script src="script.js"></script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+</html>

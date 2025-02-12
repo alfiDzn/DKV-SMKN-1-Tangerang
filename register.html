@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi | DKV SMKN 1 Tangerang</title>
+    <link rel="stylesheet" href="lib/register-style.css">
+</head>
+<body> 
+    <div class="loginform">
+        <form action="register.php" method="POST">
+            <div class="logincontain">
+                <div>
+                    <h2>Register</h2>
+                </div>
+                <div class="box-input">
+                    <input type="text" name="namalengkap" id="namalengkap" placeholder="Nama Lengkap" required>
+                    <p id="alert-nama" style="color: black;"></p>
+                </div>
+                <div class="box-input">
+                    <input type="text" name="kelas" placeholder="Kelas" required>
+                </div>
+                <div class="box-input">
+                    <input type="text" name="email" placeholder="Email" required>
+                </div>
+                <div class="box-input">
+                    <input type="password" name="password" placeholder="Password" required>
+                </div>
+                <div class="btn-input">
+                    <a href="index.html">
+                        <button type="submit" name="register">Register</button>
+                    </a>
+                </div>
+                <div class="box-input">
+                    <p>Sudah memiliki akun? <a href="index.html">Masuk</a></p>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+<script>
+    function checkNama() {
+  let namalengkap = document.getElementById("namalengkap").value;
+  let alertNama = document.getElementById("alert-nama");
+
+  // Kirim permintaan AJAX ke server untuk memeriksa nama
+  let xhr = new XMLHttpRequest();
+  xhr.open("POST", "check_nama.php", true);
+  xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+  xhr.onload = function() {
+    if (this.status == 200) {
+      if (this.responseText == "nama_ada") {
+        alertNama.innerHTML = "Nama sudah terdaftar.";
+      } else {
+        alertNama.innerHTML = "";
+      }
+    }
+  };
+  xhr.send("namalengkap=" + namalengkap);
+}
+</script>
+</html>
